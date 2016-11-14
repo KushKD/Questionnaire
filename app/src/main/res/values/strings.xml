@@ -3,4 +3,36 @@
     <string name="question_one"> Would you be interested in setting base in HP ?</string>
     <string name="question_two">  Yes! WoW!, please list down your main expectations from the State government</string>
     <string name="question_three"> What kind of minimum support infrastructure do you expect ?</string>
+
+    <string-array name="states">
+        <item> Andhra Pradesh</item>
+        <item> Arunachal Pradesh</item>
+        <item> Assam</item>
+        <item> Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+    </string-array>
 </resources>
