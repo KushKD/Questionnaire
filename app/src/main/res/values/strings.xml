@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Questionnaire</string>
+    <string name="question_one"> Would you be interested in setting base in HP ?</string>
+    <string name="question_two">  Yes! WoW!, please list down your main expectations from the State government</string>
+    <string name="question_three"> What kind of minimum support infrastructure do you expect ?</string>
 </resources>

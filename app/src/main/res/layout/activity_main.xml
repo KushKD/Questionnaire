@@ -1,17 +1,198 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rightLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="questionnaire.himachal.dit.questionnaire.MainActivity">
+    android:orientation="vertical" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:layout_weight="0.5"
+        android:background="#282a35" >
+
+        <TextView
+            android:id="@+id/textView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="Your Feedback! is Important" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:orientation="vertical"
+        android:layout_weight="1.5"
+        android:background="#ffffff" >
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ScrollView01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+
+        <!-- Question One -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#F2F2F2"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/TextViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_one"
+                android:textColor="#000000"
+                android:textSize="10pt">
+            </TextView>
+
+
+            <RadioGroup
+                android:id="@+id/radiochoice"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Yes"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radiono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="No" />
+
+                <RadioButton
+                    android:id="@+id/radiocantsay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Can't Say" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <!-- Question 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#F2F2F2"
+            android:visibility="gone"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextViewQuestion2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_two"
+                android:textColor="#000000"
+                android:textSize="9pt">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:hint="Enter Here .."
+                android:textColorHint="#000000"
+                android:textSize="9pt" />
+        </LinearLayout>
+        <!-- Question 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#F2F2F2"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextViewQuestion3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_three"
+                android:textColor="#000000"
+                android:textSize="9pt">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:hint="Enter Here .."
+                android:textColorHint="#000000"
+                android:textSize="9pt" />
+        </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay3"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.3"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:background="#ffffff">
+
+        <Button
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#282a35"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:text="Details"
+            android:layout_margin="5dp"
+            android:textSize="14dp"/>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#282a35"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:text="CLEAR"
+            android:layout_margin="5dp"
+            android:textSize="14dp"/>
+
+        <Button
+            android:id="@+id/proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#282a35"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:text="Proceed"
+            android:layout_margin="5dp"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+</LinearLayout>
