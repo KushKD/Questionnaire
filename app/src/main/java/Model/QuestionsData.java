@@ -8,17 +8,26 @@ import java.io.Serializable;
 
 public class QuestionsData implements Serializable {
 
-    public String ComtactPersonName;
+
+    public String ContactPersonName;
     public String Company_Name;
     public String State;
     public String City;
     public String Address;
     public String WebsiteAddress;
-    public String ContactPersonName;
     public String ContactPersonemail;
     public String ContactPersonMobile;
-    public String ContactPersonLandlineOffice;
     public String ContactPersonFax;
+
+    public String getDateTime() {
+        return DateTime;
+    }
+
+    public void setDateTime(String dateTime) {
+        DateTime = dateTime;
+    }
+
+    public String DateTime;
 
 
     private String Question_One;
@@ -41,13 +50,7 @@ public class QuestionsData implements Serializable {
         ContactPersonFax = contactPersonFax;
     }
 
-    public String getContactPersonLandlineOffice() {
-        return ContactPersonLandlineOffice;
-    }
 
-    public void setContactPersonLandlineOffice(String contactPersonLandlineOffice) {
-        ContactPersonLandlineOffice = contactPersonLandlineOffice;
-    }
 
     public String getContactPersonemail() {
         return ContactPersonemail;
@@ -105,13 +108,7 @@ public class QuestionsData implements Serializable {
         Company_Name = company_Name;
     }
 
-    public String getComtactPersonName() {
-        return ComtactPersonName;
-    }
 
-    public void setComtactPersonName(String comtactPersonName) {
-        ComtactPersonName = comtactPersonName;
-    }
 
 
 
