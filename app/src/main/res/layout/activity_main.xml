@@ -96,6 +96,7 @@
         </LinearLayout>
         <!-- Question 2 -->
         <LinearLayout
+            android:id="@+id/layout"
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:background="#F2F2F2"
@@ -114,6 +115,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/answertwo"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:inputType="textMultiLine"
@@ -141,6 +143,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/answerthree"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:inputType="textMultiLine"
