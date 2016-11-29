@@ -22,7 +22,7 @@ import Model.QuestionsData;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button Clear_bt,proceed_bt,details_bt;
+    Button Clear_bt,proceed_bt,details_bt, history_bt;
     TextView count_bt;
     RadioGroup radiochoice_RG;
     private RadioButton radioSexButton;
@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         layout = (LinearLayout)findViewById(R.id.layout);
         answertwo = (EditText)findViewById(R.id.answertwo);
         answerthree = (EditText)findViewById(R.id.answerthree);
+        history_bt = (Button)findViewById(R.id.history);
 
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radiochoice);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
@@ -95,6 +96,14 @@ public class MainActivity extends AppCompatActivity {
                 ShowAlert(QD);
 
 
+            }
+        });
+
+        history_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent login_Intent = new Intent(MainActivity.this, ReportActivity.class);
+                startActivity(login_Intent);
             }
         });
     }
@@ -179,15 +188,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    protected void onRestart() {
 
-        // TODO Auto-generated method stub
-        super.onRestart();
-        Intent i = new Intent(MainActivity.this, MainActivity.class);  //your class
-        startActivity(i);
-        finish();
-
-    }
 
 }
